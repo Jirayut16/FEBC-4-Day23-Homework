@@ -1,0 +1,308 @@
+/* Navbar*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f8f7f4;
+}
+.header-band{
+    background-color: #0b1215;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
+   
+}
+div>i{
+    margin-left: 10px;
+}
+
+.navbar{
+    background-color: tomato;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+input{
+    width: 35vw;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    padding-left: 10px;
+    font-size: 16px
+}
+.cart-icon{
+    color: white;
+    font-size: 2.5rem;
+
+}
+div.content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 15%;
+    padding-right: 15%;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+div.item{
+    padding: 20px;
+    background-color:#fdfdfd;
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    display: grid;
+    grid-template-columns: auto(1fr);
+}
+
+.product-name{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.button{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 10px   ;
+    height: 30px;
+    margin-top: 20px;
+}
+.view-button{
+    background-color: #ef476f;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+}
+.cart-button{
+    background-color: #ffd166;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    
+}
+.footer{
+    background-color: #0b1215;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    padding:50px;
+}
+/*S24*/
+div>i{
+    margin-left: 10px;
+}
+
+.navbar{
+    grid-area: navbar;
+    background-color: tomato;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+input{
+    width: 35vw;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    padding-left: 10px;
+    font-size: 16px
+}
+.cart-icon{
+    color: white;
+    font-size: 2.5rem;
+
+}
+div.image-product{
+    grid-area: image-product;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div.imgContainer{
+    background-color:rgb(240, 236, 236);
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+}
+div.image-detail{
+    grid-area: image-detail;
+    padding-right: 10%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+   
+}
+div.name{
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+div.price{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: tomato;
+    font-weight: bolder;
+}
+div.detail{
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 50px;
+}
+
+.buy-button{
+    background-color: #ffd166;
+    border-radius: 5px;
+    width: 15%;
+    height: 40px;
+    font-size: 1.2rem;
+}
+div.container-s24,div.container-flip6,div.container-fold6{
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "image-product image-detail"
+}
+/*payment*/
+.header-payment{
+    background-color: #e2dddd;
+    text-align: center;
+    padding: 50px;
+    line-height: 2;
+    margin-bottom: 50px;
+}
+.formContainer{
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-areas: 
+    "form detail"
+    "payment payment";
+} 
+div.form{
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    margin-top: 7px;
+    
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+legend{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.payment-input{
+    font-size: 1.2rem;
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+label{
+    margin-top: 10px;
+}
+textarea{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+div.detail{
+    grid-area: detail;
+    padding-left: 5%;
+    padding-right: 10%;
+    margin-top:0px
+}
+div.productname,div.vat,div.total{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+div.productname,div.vat,div.total>p{
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+div.coupon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+div.coupon>input{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1.2rem;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+div.coupon>button{
+    background-color:tomato;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1.2rem;
+    margin-left: 5px;
+    color: white;
+}
+div.payment{
+    grid-area: payment;
+    background-color:#f4f4f4;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%; 
+    margin-top: 20px;
+}
+div.payment>h1{
+    font-size: 1.5rem;
+    margin:20px 0px;
+}
+
+.card{
+    font-size: 1.2rem;
+}
+.cardDetail{
+    display: flex;
+    flex-direction: column;
+}
+.qrPayment{
+    font-size: 1.rem;
+    margin-top: 10px;
+}
+div.payment>button{
+    background-color: tomato;
+    margin: 20px 0px;
+    width: 15%;
+    height: 50px;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
